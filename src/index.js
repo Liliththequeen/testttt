@@ -1,0 +1,17 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './App';
+import * as serviceWorker from './serviceWorker';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+
+class Root extends React.Component {
+
+    render() {
+        return(
+           <App/>
+        );
+    }
+   }
+
+ReactDOM.render(<Root />, document.getElementById('root'));
+serviceWorker.unregister();
